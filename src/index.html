@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles/output.css" rel="stylesheet">
 </head>
+<style>
+    .b-red {
+        border: 1px solid red;
+    }
+</style>
 <body>
   <!-- Navbar -->
   <nav class="relative container mx-auto p-6">
@@ -17,8 +22,8 @@
 
         <!-- Menu items -->
         <div class="hidden space-x-6 md:flex">
-            <a href="#" class="hover:text-aquaDarkBlue">Pricing</a>
-            <a href="#" class="hover:text-aquaDarkBlue">Product</a>
+            <a href="#hero" class="hover:text-aquaDarkBlue">Pricing</a>
+            <a href="#features" class="hover:text-aquaDarkBlue">Product</a>
             <a href="#" class="hover:text-aquaDarkBlue">About Us</a>
             <a href="#" class="hover:text-aquaDarkBlue">Careers</a>
             <a href="#" class="hover:text-aquaDarkBlue">Community</a>
@@ -31,10 +36,10 @@
   </nav>
 
   <section id="hero">
-    <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+    <div class="container flex flex-col-reverse place-items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:place-items-start">
         <!-- Left Item -->
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-            <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+        <div class="flex flex-col place-items-center mb-32 space-y-12 md:w-1/2 md:place-items-start">
+            <h1 class="max-w-md text-4xl pt-5 md:pt-0 font-bold text-center md:text-5xl md:text-left">
                 Bring everyone together to build better products
             </h1>
             <p class="max-w-sm text-center text-aquaGrayishBlue md:text-left">
@@ -46,9 +51,42 @@
                     Get Started
                 </a>
             </div>
-           
+        </div>
+        <!-- Image -->
+        <div class="flex flex-col md:w-1/2">
+            <img class="" src="https://picsum.photos/680/450" alt="Hero image">
         </div>
     </div>
   </section>
+  <sections id="features">
+    <!-- Flex container -->
+    <div class="container flex flex-col place-items-center space-y-12 px-4 mx-auto md:flex-row md:space-y-0 md:place-items-start">
+        <!-- What's Different -->
+        <div class="flex flex-col space-y-12 md:w-1/2 place-items-center md:place-items-start">
+            <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+                What's Different about Us?
+            </h2>
+            <p class="max-w-sm text-center text-aquaGrayishBlue md:text-left">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus eaque, enim necessitatibus nobis minus neque quos quas sapiente suscipit, sed, iusto illo quod atque quaerat nostrum adipisci sint exercitationem ducimus.
+            </p>
+        </div>
+        <!-- Numbered list -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+            <!-- List item 1 -->
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <!-- Heading of item -->
+                <div class="rounded-l-full bg-salmonRedLighter md:bg-transparent">
+                    <div class="flex items-center space-x-2">
+                        <div class="px-4 py-2 text-white rounded-full md:py-1 bg-salmonRed">01</div>
+                        <h3 class="text-base font-bold pt-0 md:pt-3 md:mb-4">
+                            <p class="pr-2 md:pr-0">Track company-wide progress</p>
+                        </h3>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+  </sections>
 </body>
-</html>W
+</html>
