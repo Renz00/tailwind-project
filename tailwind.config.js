@@ -11,7 +11,7 @@ module.exports = {
         aquaGrayishBlue: "#53818a",
         aquaDarkBlue: "#00a7c7",
         fresia: "#EFE7BC",
-        veryLighGray: "#e0e0e0"
+        veryLightGray: "#f0f0f0"
       }
     },
     screens: {
